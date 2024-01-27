@@ -1,0 +1,38 @@
+# sbt
+target/
+project/plugins/project/
+boot/
+lib_managed/
+src_managed/
+
+# mill
+boot/
+lib_managed/
+src_managed/
+project/plugins/project/
+out/
+
+# vim
+*.sw?
+
+# intellij
+.idea/
+
+# ignore [ce]tags files
+tags
+
+# metals
+.metals/
+.bsp/
+.bloop/
+metals.sbt
+.vscode
+
+# npm
+node_modules/
+
+# nix
+.direnv/
+
+# macOS
+.DS_Store

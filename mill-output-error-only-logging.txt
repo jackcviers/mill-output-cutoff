@@ -1,0 +1,40 @@
+-*- mode: compilation; default-directory: "~/Documents/development/mill-output-cutoff/" -*-
+Compilation started at Sat Jan 27 14:50:29
+
+./mill __.test
+[build.sc] [1/53] scriptSources 
+[build.sc] [3/53] cliImports 
+[build.sc] [4/53] runIvyDeps 
+[build.sc] [13/53] resolvedRunIvyDeps 
+[build.sc] [15/53] compileResources 
+[build.sc] [16/53] enclosingClasspath 
+[build.sc] [20/53] resources.super.mill.scalalib.JavaModule.resources 
+[build.sc] [23/53] mill.scalalib.ZincWorkerModule.zincLogDebug 
+[build.sc] [24/53] mill.scalalib.ZincWorkerModule.worker 
+[build.sc] [26/53] sources.super.mill.scalalib.JavaModule.sources 
+[build.sc] [47/53] zincReportCachedProblems 
+[build.sc] [51/53] runClasspath 
+[24/87] mill-output-cutoff.compileResources 
+[27/87] mill-output-cutoff.resources 
+[29/87] mill.scalalib.ZincWorkerModule.zincLogDebug 
+[30/87] mill.scalalib.ZincWorkerModule.worker 
+[32/87] mill-output-cutoff.sources 
+[50/87] mill-output-cutoff.zincReportCachedProblems 
+[55/87] mill-output-cutoff.test.compileResources 
+[58/87] mill-output-cutoff.test.resources 
+[60/87] mill-output-cutoff.test.sources 
+[62/87] mill-output-cutoff.test.allSources 
+[63/87] mill-output-cutoff.test.allSourceFiles 
+[78/87] mill-output-cutoff.test.zincReportCachedProblems 
+[80/87] mill-output-cutoff.test.compile 
+[info] compiling 1 Scala source to /Users/jackcviers/Documents/development/mill-output-cutoff/out/mill-output-cutoff/test/compile.dest/classes ...
+[info] done compiling
+[81/87] mill-output-cutoff.test.localClasspath 
+[82/87] mill-output-cutoff.test.runClasspath 
+[85/87] mill-output-cutoff.test.forkEnv 
+[87/87] mill-output-cutoff.test.test 
+com.github.jackcviers.example.MillOutputSuite:
+  + The migrations should work to create the database 0.025s
+  + The migrations should be safe to run many times 0.114s
+
+Compilation finished at Sat Jan 27 14:50:52
