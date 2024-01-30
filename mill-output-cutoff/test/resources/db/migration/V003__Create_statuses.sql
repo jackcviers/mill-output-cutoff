@@ -12,9 +12,6 @@ INSERT INTO core.statuses (status_name, description) VALUES
     ('deleted', 'User account is deleted'),
     ('change_password', 'User is requested to change the password');
 
-ALTER TABLE core.statuses
-ADD CONSTRAINT chk_no_delete_unverified CHECK (status_name <> 'unverified');
-
 CREATE OR REPLACE FUNCTION prevent_delete_unverified()
 RETURNS TRIGGER AS $$
 BEGIN
@@ -27,4 +24,4 @@ $$ LANGUAGE plpgsql;
 
 CREATE TRIGGER trg_prevent_delete_unverified
 BEFORE DELETE ON core.statuses
-FOR EACH ROW EXECUTE FUNCTION prevent_delete_unverified();
+FOR EACH ROW EXECUTE PROCEDURE core.prevent_delete_unverified();

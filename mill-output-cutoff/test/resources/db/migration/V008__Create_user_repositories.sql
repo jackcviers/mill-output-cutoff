@@ -7,6 +7,11 @@ CREATE TABLE core.repositories (
     created_at TIMESTAMP DEFAULT current_timestamp
 );
 
+CREATE TABLE core.permissions(
+			 id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+			 permission_name VARCHAR(100) UNIQUE NOT NULL
+);
+
 INSERT INTO core.permissions (permission_name) VALUES
     ('Admin'),
     ('Read'),
